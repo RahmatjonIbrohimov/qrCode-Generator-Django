@@ -1,0 +1,63 @@
+{% extends 'qrCode/base.html' %}
+
+{% block heading %}
+    <title>home page</title>
+  <script src="https://kit.fontawesome.com/d5b5e10b1b.js" crossorigin="anonymous"></script>
+
+{% endblock heading %}
+
+
+{% block content %}
+
+    <div class="main-container">
+        <div class="heading">
+          <h1 class="heading__title">Qr Code Generator (Django)</h1>
+        </div>
+        <div class="cards">
+          <div class="card card-1">
+            <div class="card__icon"><i class="fa-solid fa-wifi fa-fade"></i></div>
+            <p class="icons"><i class=""></i></p>
+            <h2 class="card__title">Wi-Fi Qr Code Generator</h2>
+            <p class="card__apply">
+              <a class="card__link" href="wifi/">Apply Now <i class="fas fa-arrow-right"></i></a>
+            </p>
+          </div>
+          <div class="card card-2">
+            <div class="card__icon"><i class="fa-solid fa-link fa-fade"></i></div>
+            <h2 class="card__title">Link Qr Code Generator</h2>
+            <p class="card__apply">
+              <a class="card__link" href="link/">Apply Now <i class="fas fa-arrow-right"></i></a>
+            </p>
+          </div>
+          <div class="card card-3">
+            <div class="card__icon"><i class="fa-brands fa-telegram fa-fade"></i></div>
+            <h2 class="card__title">Telegram Account Qr Code Generator</h2>
+            <p class="card__apply">
+              <a class="card__link" href="telegram/">Apply Now <i class="fas fa-arrow-right"></i></a>
+            </p>
+          </div>
+          <div class="card card-4">
+            <div class="card__icon"><i class="fa-brands fa-twitter fa-fade"></i></div>
+            <h2 class="card__title">Twitter Qr Code Generator</h2>
+            <p class="card__apply">
+              <a class="card__link" href="twitter/">Apply Now <i class="fas fa-arrow-right"></i></a>
+            </p>
+          </div>
+          <div class="card card-5">
+            <div class="card__icon"><i class="fa-brands fa-instagram"></i></div>
+            <h2 class="card__title">Instagram Qr Code Generator</h2>
+            <p class="card__apply">
+              <a class="card__link" href="instagram/">Apply Now <i class="fas fa-arrow-right"></i></a>
+            </p>
+          </div>
+          <div class="card card-1">
+            <div class="card__icon"><i class="fa-brands fa-facebook fa-fade"></i></div>
+            <h2 class="card__title">FaceBook Qr Code Generator</h2>
+            <p class="card__apply">
+              <a class="card__link" href="facebook/">Apply Now <i class="fas fa-arrow-right"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+{% endblock content %}

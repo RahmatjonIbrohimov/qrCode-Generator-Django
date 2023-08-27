@@ -1,0 +1,21 @@
+{% extends 'qrCode/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+ {% block heading %}
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'qrCode/wifi-style.css' %}">
+{% endblock heading %}
+
+{% block content %}
+<h1>Link</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button>Send</button>
+</form>
+<div class="qrcode-img">
+    {% if qrcode %}
+        <img src="/media/{{ qrcode }}" alt="wifi qr-code">
+    {% endif %}
+</div>
+{% endblock content %}
