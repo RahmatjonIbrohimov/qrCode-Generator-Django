@@ -1,0 +1,1 @@
+# qrCode-Generator-Django
